@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formularz HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="get" action="/PhpProject1/odbierz.php">
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" name="nazwisko" /><br/>
+            <label for="wiek">Wiek:</label>
+            <input type="text" name="wiek" /><br/>
+            <label for="panstwo">Państwo:</label>
+            <select name="select">
+                <option>Uganda</option>
+                <option>Madagaskar</option>
+                <option>Benin</option>
+            </select>
+            <br>
+            <label for="email">Email</label>
+            <input type="text" name="email" /><br>
+           
+            <h2>Zamawiam tutorial z języka</h2><br>
+            <input type="checkbox" name="tech[]" value="PHP"/>PHP<br/>
+            <input type="checkbox" name="tech[]" value="Java"/>JAVA<br/>
+            <input type="checkbox" name="tech[]" value="C++"/>C++<br/>
+            
+            <h2>Sposób zapłaty</h2>
+            <input type="radio" name="eurocard" value="eurocard"/>eurocard<br/>
+            <input type="radio" name="visa" value="visa"/>visa<br/>
+            <input type="radio" name="przelew" value="przelew"/>przelew<br/>
+             
+            <input type="submit" value="Rejestruj">
+            <input type="reset" value="Anuluj">
+            
+            
+           
+            
+        </form>
+    </body>
+</html>
